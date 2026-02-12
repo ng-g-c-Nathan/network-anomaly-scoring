@@ -1,7 +1,7 @@
 {
-  "mode": "normal",
+  "mode": "low",
   "folder_name": "global",
-  "trained_at": "2026-02-11T01:35:24.515478",
-  "num_rows": 3991435,
+  "trained_at": "2026-02-11T20:27:00.083013",
+  "num_rows": 9328691,
   "n_features": 16
 }

@@ -1,0 +1,34 @@
+{
+  "global": {
+    "phases": {
+      "inicio": {
+        "status": "done",
+        "time_sec": 0
+      },
+      "preprocessor": {
+        "status": "done",
+        "time_sec": 44.417077199999994
+      },
+      "transform": {
+        "status": "error: cannot access local variable 'X' where it is not associated with a value",
+        "time_sec": 0.0006358000000545871
+      },
+      "kmeans": {
+        "status": "done",
+        "time_sec": 23.80400560000004
+      },
+      "isoforest": {
+        "status": "done",
+        "time_sec": 4.166750900000011
+      }
+    },
+    "folder_name": "global",
+    "mode": "normal",
+    "status": "running",
+    "num_rows": 9328691,
+    "n_features": 16,
+    "started_at": "2026-02-11T20:35:20.550958",
+    "finished_at": null,
+    "elapsed_sec": null
+  }
+}
