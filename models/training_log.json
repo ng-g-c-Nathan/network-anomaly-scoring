@@ -7,28 +7,124 @@
       },
       "preprocessor": {
         "status": "done",
-        "time_sec": 44.417077199999994
+        "time_sec": 51.94441749999987
       },
       "transform": {
-        "status": "error: cannot access local variable 'X' where it is not associated with a value",
-        "time_sec": 0.0006358000000545871
+        "status": "done",
+        "time_sec": 42.220096700000795
       },
       "kmeans": {
         "status": "done",
-        "time_sec": 23.80400560000004
+        "time_sec": 25.444018299999698
       },
       "isoforest": {
         "status": "done",
-        "time_sec": 4.166750900000011
+        "time_sec": 4.849739799999952
       }
     },
     "folder_name": "global",
-    "mode": "normal",
-    "status": "running",
+    "mode": "low",
+    "status": "done",
     "num_rows": 9328691,
     "n_features": 16,
-    "started_at": "2026-02-11T20:35:20.550958",
-    "finished_at": null,
-    "elapsed_sec": null
+    "started_at": "2026-02-11T22:09:28.991546",
+    "finished_at": "2026-02-11T22:11:34.349427",
+    "elapsed_sec": 146.7414292000003
+  },
+  "2026-02-10_2026-02-11": {
+    "phases": {
+      "inicio": {
+        "status": "done",
+        "time_sec": 0
+      },
+      "preprocessor": {
+        "status": "done",
+        "time_sec": 10.638830299999427
+      },
+      "transform": {
+        "status": "done",
+        "time_sec": 8.72405560000061
+      },
+      "kmeans": {
+        "status": "done",
+        "time_sec": 12.741850899999918
+      },
+      "isoforest": {
+        "status": "done",
+        "time_sec": 2.6596183000001474
+      }
+    },
+    "folder_name": "2026-02-10_2026-02-11",
+    "mode": "normal",
+    "status": "done",
+    "num_rows": 2726614,
+    "n_features": 16,
+    "started_at": "2026-02-11T22:12:29.422832",
+    "finished_at": "2026-02-11T22:13:04.619079",
+    "elapsed_sec": 40.58781859999999
+  },
+  "2026-02-11_2026-02-11": {
+    "phases": {
+      "inicio": {
+        "status": "done",
+        "time_sec": 0
+      },
+      "preprocessor": {
+        "status": "done",
+        "time_sec": 0.11201489999984915
+      },
+      "transform": {
+        "status": "done",
+        "time_sec": 0.07875530000001163
+      },
+      "kmeans": {
+        "status": "done",
+        "time_sec": 0.3608840999995664
+      },
+      "isoforest": {
+        "status": "done",
+        "time_sec": 0.5263947999992524
+      }
+    },
+    "folder_name": "2026-02-11_2026-02-11",
+    "mode": "harcore",
+    "status": "done",
+    "num_rows": 23559,
+    "n_features": 16,
+    "started_at": "2026-02-11T22:13:32.611161",
+    "finished_at": "2026-02-11T22:13:33.979130",
+    "elapsed_sec": 1.6264586999996027
+  },
+  "2026-02-08_2026-02-09": {
+    "phases": {
+      "inicio": {
+        "status": "done",
+        "time_sec": 0
+      },
+      "preprocessor": {
+        "status": "done",
+        "time_sec": 30.777857799999765
+      },
+      "transform": {
+        "status": "done",
+        "time_sec": 18.47006010000041
+      },
+      "kmeans": {
+        "status": "done",
+        "time_sec": 24.654849900000045
+      },
+      "isoforest": {
+        "status": "done",
+        "time_sec": 5.020543700000417
+      }
+    },
+    "folder_name": "2026-02-08_2026-02-09",
+    "mode": "normal",
+    "status": "done",
+    "num_rows": 5331878,
+    "n_features": 16,
+    "started_at": "2026-02-11T22:17:09.013740",
+    "finished_at": "2026-02-11T22:18:29.507180",
+    "elapsed_sec": 93.47852460000013
   }
 }
