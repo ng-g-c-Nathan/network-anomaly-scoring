@@ -7,31 +7,334 @@
       },
       "preprocessor": {
         "status": "done",
-        "time_sec": 51.94441749999987
+        "time_sec": 129.1131301000023
       },
       "transform": {
         "status": "done",
-        "time_sec": 42.220096700000795
+        "time_sec": 154.9611137000029
+      },
+      "pca": {
+        "status": "done",
+        "time_sec": 0.8021181999974942,
+        "n_components_in": 32,
+        "n_components_out": 2,
+        "variance_explained": 0.9884123996731662
       },
       "kmeans": {
         "status": "done",
-        "time_sec": 25.444018299999698
+        "time_sec": 5.163729600000806
       },
       "isoforest": {
         "status": "done",
-        "time_sec": 4.849739799999952
+        "time_sec": 17.80775100000028,
+        "contamination_used": 0.019956097585367195
+      },
+      "validation_diagnosis": {
+        "status": "done",
+        "time_sec": 18.585488200002146,
+        "kmeans": {
+          "inertia_train_normalized": 1168.5826974535196,
+          "inertia_val_normalized": 5469.204820923548,
+          "inertia_gap_pct": 368.02034916669527,
+          "silhouette_train": 0.9213702128839802,
+          "silhouette_val": 0.8506807913157481,
+          "silhouette_gap": 0.0706894215682321,
+          "diagnosis": "OK \u2014 KMeans generaliza bien al conjunto de validaci\u00f3n."
+        },
+        "isoforest": {
+          "mean_score_train": -0.36869259433904333,
+          "mean_score_val": -0.4227658111820265,
+          "std_score_train": 0.10312834135226628,
+          "std_score_val": 0.1363770055863287,
+          "mean_score_gap": 0.05407321684298316,
+          "gap_zscore": 0.5243293563529701,
+          "ks_proxy": 0.5243293563529701,
+          "anomaly_rate_train": 0.019956097585367195,
+          "anomaly_rate_val": 0.05888294414720736,
+          "diagnosis": "OK \u2014 Isolation Forest generaliza bien al conjunto de validaci\u00f3n."
+        }
       }
     },
     "folder_name": "global",
+    "mode": "hardcore",
+    "status": "done",
+    "num_rows_total": 499973,
+    "num_rows_train": 399978,
+    "num_rows_val": 99995,
+    "n_features": 16,
+    "started_at": "2026-05-10T02:34:05.291129",
+    "finished_at": "2026-05-10T02:39:35.777936",
+    "elapsed_sec": 341.1358610999996
+  },
+  "2026-04-29_2026-04-29": {
+    "phases": {
+      "inicio": {
+        "status": "done",
+        "time_sec": 0
+      },
+      "preprocessor": {
+        "status": "done",
+        "time_sec": 131.82586269999956
+      },
+      "transform": {
+        "status": "done",
+        "time_sec": 160.3365369000021
+      },
+      "pca": {
+        "status": "done",
+        "time_sec": 0.8596619999989343,
+        "n_components_in": 32,
+        "n_components_out": 2,
+        "variance_explained": 0.9885298141848612
+      },
+      "kmeans": {
+        "status": "done",
+        "time_sec": 2.895158800001809
+      },
+      "isoforest": {
+        "status": "done",
+        "time_sec": 7.101739500001713,
+        "contamination_used": 0.01997809934298029
+      },
+      "validation_diagnosis": {
+        "status": "done",
+        "time_sec": 7.127856700000848,
+        "kmeans": {
+          "inertia_train_normalized": 1035.1531959776637,
+          "inertia_val_normalized": 6128.017434309938,
+          "inertia_gap_pct": 491.9913553010145,
+          "silhouette_train": 0.9301652509990834,
+          "silhouette_val": 0.8662875274183971,
+          "silhouette_gap": 0.06387772358068633,
+          "diagnosis": "OK \u2014 KMeans generaliza bien al conjunto de validaci\u00f3n."
+        },
+        "isoforest": {
+          "mean_score_train": -0.3641880604371203,
+          "mean_score_val": -0.4141144723344657,
+          "std_score_train": 0.10304827617986866,
+          "std_score_val": 0.13773316431135155,
+          "mean_score_gap": 0.04992641189734537,
+          "gap_zscore": 0.48449536225331746,
+          "ks_proxy": 0.48449536225331746,
+          "anomaly_rate_train": 0.01997809934298029,
+          "anomaly_rate_val": 0.05750172505175155,
+          "diagnosis": "OK \u2014 Isolation Forest generaliza bien al conjunto de validaci\u00f3n."
+        }
+      }
+    },
+    "folder_name": "2026-04-29_2026-04-29",
+    "mode": "normal",
+    "status": "done",
+    "num_rows_total": 499985,
+    "num_rows_train": 399988,
+    "num_rows_val": 99997,
+    "n_features": 16,
+    "started_at": "2026-05-10T02:39:46.928199",
+    "finished_at": "2026-05-10T02:45:00.595484",
+    "elapsed_sec": 321.20828809999875
+  },
+  "2026-04-30_2026-04-30": {
+    "phases": {
+      "inicio": {
+        "status": "done",
+        "time_sec": 0
+      },
+      "preprocessor": {
+        "status": "done",
+        "time_sec": 1.3494716999994125
+      },
+      "transform": {
+        "status": "done",
+        "time_sec": 1.6830472000001464
+      },
+      "pca": {
+        "status": "done",
+        "time_sec": 0.011217799998121336,
+        "n_components_in": 32,
+        "n_components_out": 1,
+        "variance_explained": 0.9511854790484957
+      },
+      "kmeans": {
+        "status": "done",
+        "time_sec": 0.2726070000026084
+      },
+      "isoforest": {
+        "status": "done",
+        "time_sec": 0.7647634999993898,
+        "contamination_used": 0.02003151024082827
+      },
+      "validation_diagnosis": {
+        "status": "done",
+        "time_sec": 0.3500655999996525,
+        "kmeans": {
+          "inertia_train_normalized": 81.82208512565165,
+          "inertia_val_normalized": 378.1197655801421,
+          "inertia_gap_pct": 362.1243335457355,
+          "silhouette_train": 0.9045780106886939,
+          "silhouette_val": 0.8086986672048614,
+          "silhouette_gap": 0.09587934348383254,
+          "diagnosis": "OK \u2014 KMeans generaliza bien al conjunto de validaci\u00f3n."
+        },
+        "isoforest": {
+          "mean_score_train": -0.3835959407760073,
+          "mean_score_val": -0.44540510482463225,
+          "std_score_train": 0.10294922852433332,
+          "std_score_val": 0.137412250111826,
+          "mean_score_gap": 0.061809164048624965,
+          "gap_zscore": 0.6003849172508914,
+          "ks_proxy": 0.6003849172508914,
+          "anomaly_rate_train": 0.02003151024082827,
+          "anomaly_rate_val": 0.052205220522052204,
+          "diagnosis": "OK \u2014 Isolation Forest generaliza bien al conjunto de validaci\u00f3n."
+        }
+      }
+    },
+    "folder_name": "2026-04-30_2026-04-30",
+    "mode": "normal",
+    "status": "done",
+    "num_rows_total": 5554,
+    "num_rows_train": 4443,
+    "num_rows_val": 1111,
+    "n_features": 16,
+    "started_at": "2026-05-10T02:45:03.424162",
+    "finished_at": "2026-05-10T02:45:08.194779",
+    "elapsed_sec": 4.808458899999096
+  },
+  "2026-05-01_2026-05-01": {
+    "phases": {
+      "inicio": {
+        "status": "done",
+        "time_sec": 0
+      },
+      "preprocessor": {
+        "status": "done",
+        "time_sec": 12.814520699997956
+      },
+      "transform": {
+        "status": "done",
+        "time_sec": 16.08464119999917
+      },
+      "pca": {
+        "status": "done",
+        "time_sec": 0.060125200001493795,
+        "n_components_in": 32,
+        "n_components_out": 1,
+        "variance_explained": 0.9998960097873115
+      },
+      "kmeans": {
+        "status": "done",
+        "time_sec": 0.6110893999975815
+      },
+      "isoforest": {
+        "status": "done",
+        "time_sec": 3.8389401999993424,
+        "contamination_used": 0.020023557126030624
+      },
+      "validation_diagnosis": {
+        "status": "done",
+        "time_sec": 1.9932781999996223,
+        "kmeans": {
+          "inertia_train_normalized": 8441.525427944604,
+          "inertia_val_normalized": 45582.36795446242,
+          "inertia_gap_pct": 439.97785522943224,
+          "silhouette_train": 0.9761674325451127,
+          "silhouette_val": 0.9347353878955983,
+          "silhouette_gap": 0.04143204464951444,
+          "diagnosis": "OK \u2014 KMeans generaliza bien al conjunto de validaci\u00f3n."
+        },
+        "isoforest": {
+          "mean_score_train": -0.37433096185845605,
+          "mean_score_val": -0.4456014716005665,
+          "std_score_train": 0.10352634008490066,
+          "std_score_val": 0.14405474619229314,
+          "mean_score_gap": 0.07127050974211047,
+          "gap_zscore": 0.6884287581659161,
+          "ks_proxy": 0.6884287581659161,
+          "anomaly_rate_train": 0.020023557126030624,
+          "anomaly_rate_val": 0.06094627105052125,
+          "diagnosis": "OK \u2014 Isolation Forest generaliza bien al conjunto de validaci\u00f3n."
+        }
+      }
+    },
+    "folder_name": "2026-05-01_2026-05-01",
+    "mode": "hardcore",
+    "status": "done",
+    "num_rows_total": 49879,
+    "num_rows_train": 39903,
+    "num_rows_val": 9976,
+    "n_features": 16,
+    "started_at": "2026-05-10T02:45:11.131349",
+    "finished_at": "2026-05-10T02:45:47.234070",
+    "elapsed_sec": 36.35438820000127
+  },
+  "2026-05-02_2026-05-02": {
+    "phases": {
+      "inicio": {
+        "status": "done",
+        "time_sec": 0
+      },
+      "preprocessor": {
+        "status": "done",
+        "time_sec": 57.81532940000034
+      },
+      "transform": {
+        "status": "done",
+        "time_sec": 68.76129709999805
+      },
+      "pca": {
+        "status": "done",
+        "time_sec": 0.2979559000013978,
+        "n_components_in": 32,
+        "n_components_out": 1,
+        "variance_explained": 0.9981831621953886
+      },
+      "kmeans": {
+        "status": "done",
+        "time_sec": 0.7709659000029205
+      },
+      "isoforest": {
+        "status": "done",
+        "time_sec": 0.9176698000010219,
+        "contamination_used": 0.019756830177409444
+      },
+      "validation_diagnosis": {
+        "status": "done",
+        "time_sec": 1.3458293000003323,
+        "kmeans": {
+          "inertia_train_normalized": 6594.793067332431,
+          "inertia_val_normalized": 34968.508553459666,
+          "inertia_gap_pct": 430.2442123116427,
+          "silhouette_train": 0.9586588944296167,
+          "silhouette_val": 0.9070245707080768,
+          "silhouette_gap": 0.051634323721539865,
+          "diagnosis": "OK \u2014 KMeans generaliza bien al conjunto de validaci\u00f3n."
+        },
+        "isoforest": {
+          "mean_score_train": -0.361965723077775,
+          "mean_score_val": -0.42362780041476666,
+          "std_score_train": 0.10132444130098854,
+          "std_score_val": 0.14143984889538536,
+          "mean_score_gap": 0.06166207733699164,
+          "gap_zscore": 0.6085607435408583,
+          "ks_proxy": 0.6085607435408583,
+          "anomaly_rate_train": 0.019756830177409444,
+          "anomaly_rate_val": 0.058626234780611075,
+          "diagnosis": "OK \u2014 Isolation Forest generaliza bien al conjunto de validaci\u00f3n."
+        }
+      }
+    },
+    "folder_name": "2026-05-02_2026-05-02",
     "mode": "low",
     "status": "done",
-    "num_rows": 9328691,
+    "num_rows_total": 217647,
+    "num_rows_train": 174117,
+    "num_rows_val": 43530,
     "n_features": 16,
-    "started_at": "2026-02-11T22:09:28.991546",
-    "finished_at": "2026-02-11T22:11:34.349427",
-    "elapsed_sec": 146.7414292000003
+    "started_at": "2026-05-10T02:45:51.230933",
+    "finished_at": "2026-05-10T02:48:04.553271",
+    "elapsed_sec": 134.63642629999958
   },
-  "2026-02-10_2026-02-11": {
+  "2026-05-03_2026-05-03": {
     "phases": {
       "inicio": {
         "status": "done",
@@ -39,31 +342,200 @@
       },
       "preprocessor": {
         "status": "done",
-        "time_sec": 10.638830299999427
+        "time_sec": 15.884674600001745
       },
       "transform": {
         "status": "done",
-        "time_sec": 8.72405560000061
+        "time_sec": 19.95186040000044
+      },
+      "pca": {
+        "status": "done",
+        "time_sec": 0.07456589999856078,
+        "n_components_in": 32,
+        "n_components_out": 1,
+        "variance_explained": 0.999178226091156
       },
       "kmeans": {
         "status": "done",
-        "time_sec": 12.741850899999918
+        "time_sec": 0.7472522999996727
       },
       "isoforest": {
         "status": "done",
-        "time_sec": 2.6596183000001474
+        "time_sec": 3.984963199996855,
+        "contamination_used": 0.019995478925628328
+      },
+      "validation_diagnosis": {
+        "status": "done",
+        "time_sec": 2.1811299999972107,
+        "kmeans": {
+          "inertia_train_normalized": 16594.60040699264,
+          "inertia_val_normalized": 88571.91020218514,
+          "inertia_gap_pct": 433.7393370729353,
+          "silhouette_train": 0.9638765721673784,
+          "silhouette_val": 0.9159138008457829,
+          "silhouette_gap": 0.04796277132159554,
+          "diagnosis": "OK \u2014 KMeans generaliza bien al conjunto de validaci\u00f3n."
+        },
+        "isoforest": {
+          "mean_score_train": -0.3600581430041935,
+          "mean_score_val": -0.4212525696166901,
+          "std_score_train": 0.10719653227654874,
+          "std_score_val": 0.148915401678723,
+          "mean_score_gap": 0.06119442661249663,
+          "gap_zscore": 0.5708619981719695,
+          "ks_proxy": 0.5708619981719695,
+          "anomaly_rate_train": 0.019995478925628328,
+          "anomaly_rate_val": 0.06057866184448463,
+          "diagnosis": "OK \u2014 Isolation Forest generaliza bien al conjunto de validaci\u00f3n."
+        }
       }
     },
-    "folder_name": "2026-02-10_2026-02-11",
+    "folder_name": "2026-05-03_2026-05-03",
+    "mode": "hardcore",
+    "status": "done",
+    "num_rows_total": 60827,
+    "num_rows_train": 48661,
+    "num_rows_val": 12166,
+    "n_features": 16,
+    "started_at": "2026-05-10T02:48:07.595028",
+    "finished_at": "2026-05-10T02:48:51.034693",
+    "elapsed_sec": 43.77745920000234
+  },
+  "2026-04-29_2026-04-30": {
+    "phases": {
+      "inicio": {
+        "status": "done",
+        "time_sec": 0
+      },
+      "preprocessor": {
+        "status": "done",
+        "time_sec": 133.62045299999954
+      },
+      "transform": {
+        "status": "done",
+        "time_sec": 161.12123170000268
+      },
+      "pca": {
+        "status": "done",
+        "time_sec": 0.750919399997656,
+        "n_components_in": 32,
+        "n_components_out": 2,
+        "variance_explained": 0.9886292948376878
+      },
+      "kmeans": {
+        "status": "done",
+        "time_sec": 1.3814917000017886
+      },
+      "isoforest": {
+        "status": "done",
+        "time_sec": 1.858881600001041,
+        "contamination_used": 0.019920697224402855
+      },
+      "validation_diagnosis": {
+        "status": "done",
+        "time_sec": 2.4072828999997,
+        "kmeans": {
+          "inertia_train_normalized": 1144.1551092634083,
+          "inertia_val_normalized": 6637.63833398847,
+          "inertia_gap_pct": 480.13448353708725,
+          "silhouette_train": 0.9260575735872116,
+          "silhouette_val": 0.8698706123355656,
+          "silhouette_gap": 0.05618696125164602,
+          "diagnosis": "OK \u2014 KMeans generaliza bien al conjunto de validaci\u00f3n."
+        },
+        "isoforest": {
+          "mean_score_train": -0.3626279201616957,
+          "mean_score_val": -0.4116265132020622,
+          "std_score_train": 0.1039581345297791,
+          "std_score_val": 0.1397402281071297,
+          "mean_score_gap": 0.04899859304036652,
+          "gap_zscore": 0.4713300528332464,
+          "ks_proxy": 0.4713300528332464,
+          "anomaly_rate_train": 0.019920697224402855,
+          "anomaly_rate_val": 0.058061741852255565,
+          "diagnosis": "OK \u2014 Isolation Forest generaliza bien al conjunto de validaci\u00f3n."
+        }
+      }
+    },
+    "folder_name": "2026-04-29_2026-04-30",
+    "mode": "low",
+    "status": "done",
+    "num_rows_total": 499983,
+    "num_rows_train": 399986,
+    "num_rows_val": 99997,
+    "n_features": 16,
+    "started_at": "2026-05-10T02:48:58.219987",
+    "finished_at": "2026-05-10T02:54:02.792944",
+    "elapsed_sec": 308.9927596999987
+  },
+  "2026-04-29_2026-05-01": {
+    "phases": {
+      "inicio": {
+        "status": "done",
+        "time_sec": 0
+      },
+      "preprocessor": {
+        "status": "done",
+        "time_sec": 132.978401700002
+      },
+      "transform": {
+        "status": "done",
+        "time_sec": 161.5209004999997
+      },
+      "pca": {
+        "status": "done",
+        "time_sec": 0.7703079999992042,
+        "n_components_in": 32,
+        "n_components_out": 2,
+        "variance_explained": 0.9882089073646001
+      },
+      "kmeans": {
+        "status": "done",
+        "time_sec": 2.491984100000991
+      },
+      "isoforest": {
+        "status": "done",
+        "time_sec": 7.068547500002751,
+        "contamination_used": 0.019995649858620405
+      },
+      "validation_diagnosis": {
+        "status": "done",
+        "time_sec": 7.088464599997678,
+        "kmeans": {
+          "inertia_train_normalized": 1334.2093495474403,
+          "inertia_val_normalized": 7101.41936577905,
+          "inertia_gap_pct": 432.2567532739768,
+          "silhouette_train": 0.9198226764960676,
+          "silhouette_val": 0.8685368712284124,
+          "silhouette_gap": 0.05128580526765525,
+          "diagnosis": "OK \u2014 KMeans generaliza bien al conjunto de validaci\u00f3n."
+        },
+        "isoforest": {
+          "mean_score_train": -0.364857997272487,
+          "mean_score_val": -0.4130704890719591,
+          "std_score_train": 0.1037464922583262,
+          "std_score_val": 0.13942677562426894,
+          "mean_score_gap": 0.04821249179947207,
+          "gap_zscore": 0.4647144279290345,
+          "ks_proxy": 0.4647144279290345,
+          "anomaly_rate_train": 0.019995649858620405,
+          "anomaly_rate_val": 0.05809174275228257,
+          "diagnosis": "OK \u2014 Isolation Forest generaliza bien al conjunto de validaci\u00f3n."
+        }
+      }
+    },
+    "folder_name": "2026-04-29_2026-05-01",
     "mode": "normal",
     "status": "done",
-    "num_rows": 2726614,
+    "num_rows_total": 499984,
+    "num_rows_train": 399987,
+    "num_rows_val": 99997,
     "n_features": 16,
-    "started_at": "2026-02-11T22:12:29.422832",
-    "finished_at": "2026-02-11T22:13:04.619079",
-    "elapsed_sec": 40.58781859999999
+    "started_at": "2026-05-10T02:54:10.222781",
+    "finished_at": "2026-05-10T02:59:25.692909",
+    "elapsed_sec": 320.17988160000095
   },
-  "2026-02-11_2026-02-11": {
+  "2026-04-29_2026-05-02": {
     "phases": {
       "inicio": {
         "status": "done",
@@ -71,31 +543,66 @@
       },
       "preprocessor": {
         "status": "done",
-        "time_sec": 0.11201489999984915
+        "time_sec": 133.87635040000168
       },
       "transform": {
         "status": "done",
-        "time_sec": 0.07875530000001163
+        "time_sec": 162.18664290000015
+      },
+      "pca": {
+        "status": "done",
+        "time_sec": 0.7461903000003076,
+        "n_components_in": 32,
+        "n_components_out": 2,
+        "variance_explained": 0.9887175868670685
       },
       "kmeans": {
         "status": "done",
-        "time_sec": 0.3608840999995664
+        "time_sec": 1.528631500001211
       },
       "isoforest": {
         "status": "done",
-        "time_sec": 0.5263947999992524
+        "time_sec": 1.8729992999979004,
+        "contamination_used": 0.01943606898379411
+      },
+      "validation_diagnosis": {
+        "status": "done",
+        "time_sec": 2.4657354000009946,
+        "kmeans": {
+          "inertia_train_normalized": 1181.137637308115,
+          "inertia_val_normalized": 5643.095001713997,
+          "inertia_gap_pct": 377.76777434465265,
+          "silhouette_train": 0.9215393368650261,
+          "silhouette_val": 0.8643747166082183,
+          "silhouette_gap": 0.0571646202568078,
+          "diagnosis": "OK \u2014 KMeans generaliza bien al conjunto de validaci\u00f3n."
+        },
+        "isoforest": {
+          "mean_score_train": -0.3654576148340494,
+          "mean_score_val": -0.4179108912240822,
+          "std_score_train": 0.10113725864641537,
+          "std_score_val": 0.1373817660583139,
+          "mean_score_gap": 0.05245327639003278,
+          "gap_zscore": 0.5186345476637249,
+          "ks_proxy": 0.5186345476637249,
+          "anomaly_rate_train": 0.01943606898379411,
+          "anomaly_rate_val": 0.06437321866093304,
+          "diagnosis": "OK \u2014 Isolation Forest generaliza bien al conjunto de validaci\u00f3n."
+        }
       }
     },
-    "folder_name": "2026-02-11_2026-02-11",
-    "mode": "harcore",
+    "folder_name": "2026-04-29_2026-05-02",
+    "mode": "low",
     "status": "done",
-    "num_rows": 23559,
+    "num_rows_total": 499973,
+    "num_rows_train": 399978,
+    "num_rows_val": 99995,
     "n_features": 16,
-    "started_at": "2026-02-11T22:13:32.611161",
-    "finished_at": "2026-02-11T22:13:33.979130",
-    "elapsed_sec": 1.6264586999996027
+    "started_at": "2026-05-10T02:59:34.222099",
+    "finished_at": "2026-05-10T03:04:40.361476",
+    "elapsed_sec": 311.88116850000006
   },
-  "2026-02-08_2026-02-09": {
+  "2026-04-29_2026-05-03": {
     "phases": {
       "inicio": {
         "status": "done",
@@ -103,28 +610,465 @@
       },
       "preprocessor": {
         "status": "done",
-        "time_sec": 30.777857799999765
+        "time_sec": 133.1987459000011
       },
       "transform": {
         "status": "done",
-        "time_sec": 18.47006010000041
+        "time_sec": 163.02513330000147
+      },
+      "pca": {
+        "status": "done",
+        "time_sec": 0.7505228999980318,
+        "n_components_in": 32,
+        "n_components_out": 2,
+        "variance_explained": 0.9888253102549502
       },
       "kmeans": {
         "status": "done",
-        "time_sec": 24.654849900000045
+        "time_sec": 5.129742199998873
       },
       "isoforest": {
         "status": "done",
-        "time_sec": 5.020543700000417
+        "time_sec": 17.978040899997723,
+        "contamination_used": 0.019911095110231064
+      },
+      "validation_diagnosis": {
+        "status": "done",
+        "time_sec": 17.110901000000013,
+        "kmeans": {
+          "inertia_train_normalized": 1149.3541699795198,
+          "inertia_val_normalized": 5563.088924491117,
+          "inertia_gap_pct": 384.01868369175054,
+          "silhouette_train": 0.9274895742673299,
+          "silhouette_val": 0.8549267690021203,
+          "silhouette_gap": 0.07256280526520964,
+          "diagnosis": "OK \u2014 KMeans generaliza bien al conjunto de validaci\u00f3n."
+        },
+        "isoforest": {
+          "mean_score_train": -0.36695787601091434,
+          "mean_score_val": -0.420736461168709,
+          "std_score_train": 0.10361126740757813,
+          "std_score_val": 0.1370623625850291,
+          "mean_score_gap": 0.053778585157794656,
+          "gap_zscore": 0.5190418619844167,
+          "ks_proxy": 0.5190418619844167,
+          "anomaly_rate_train": 0.019911095110231064,
+          "anomaly_rate_val": 0.05957297864893245,
+          "diagnosis": "OK \u2014 Isolation Forest generaliza bien al conjunto de validaci\u00f3n."
+        }
       }
     },
-    "folder_name": "2026-02-08_2026-02-09",
+    "folder_name": "2026-04-29_2026-05-03",
+    "mode": "hardcore",
+    "status": "done",
+    "num_rows_total": 499973,
+    "num_rows_train": 399978,
+    "num_rows_val": 99995,
+    "n_features": 16,
+    "started_at": "2026-05-10T03:04:49.717370",
+    "finished_at": "2026-05-10T03:10:31.142041",
+    "elapsed_sec": 348.00590849999935
+  },
+  "2026-04-30_2026-05-01": {
+    "phases": {
+      "inicio": {
+        "status": "done",
+        "time_sec": 0
+      },
+      "preprocessor": {
+        "status": "done",
+        "time_sec": 16.73485939999955
+      },
+      "transform": {
+        "status": "done",
+        "time_sec": 19.83375060000253
+      },
+      "pca": {
+        "status": "done",
+        "time_sec": 0.0819885000018985,
+        "n_components_in": 32,
+        "n_components_out": 1,
+        "variance_explained": 0.99978517225848
+      },
+      "kmeans": {
+        "status": "done",
+        "time_sec": 0.7526503999979468
+      },
+      "isoforest": {
+        "status": "done",
+        "time_sec": 4.44851959999869,
+        "contamination_used": 0.01997925404771569
+      },
+      "validation_diagnosis": {
+        "status": "done",
+        "time_sec": 2.1517945999985386,
+        "kmeans": {
+          "inertia_train_normalized": 8695.327832487776,
+          "inertia_val_normalized": 32868.75219004402,
+          "inertia_gap_pct": 278.0047494844149,
+          "silhouette_train": 0.9661658126348837,
+          "silhouette_val": 0.9193258567256325,
+          "silhouette_gap": 0.04683995590925116,
+          "diagnosis": "OK \u2014 KMeans generaliza bien al conjunto de validaci\u00f3n."
+        },
+        "isoforest": {
+          "mean_score_train": -0.37140510087989476,
+          "mean_score_val": -0.4387660533156329,
+          "std_score_train": 0.10178583002572306,
+          "std_score_val": 0.141290742005537,
+          "mean_score_gap": 0.06736095243573814,
+          "gap_zscore": 0.6617910608845539,
+          "ks_proxy": 0.6617910608845539,
+          "anomaly_rate_train": 0.01997925404771569,
+          "anomaly_rate_val": 0.06277622440696311,
+          "diagnosis": "OK \u2014 Isolation Forest generaliza bien al conjunto de validaci\u00f3n."
+        }
+      }
+    },
+    "folder_name": "2026-04-30_2026-05-01",
+    "mode": "hardcore",
+    "status": "done",
+    "num_rows_total": 55433,
+    "num_rows_train": 44346,
+    "num_rows_val": 11087,
+    "n_features": 16,
+    "started_at": "2026-05-10T03:10:34.409934",
+    "finished_at": "2026-05-10T03:11:19.427814",
+    "elapsed_sec": 45.352302899998904
+  },
+  "2026-04-30_2026-05-02": {
+    "phases": {
+      "inicio": {
+        "status": "done",
+        "time_sec": 0
+      },
+      "preprocessor": {
+        "status": "done",
+        "time_sec": 72.48341959999743
+      },
+      "transform": {
+        "status": "done",
+        "time_sec": 89.5398892000012
+      },
+      "pca": {
+        "status": "done",
+        "time_sec": 0.415025099999184,
+        "n_components_in": 32,
+        "n_components_out": 1,
+        "variance_explained": 0.9985886806641783
+      },
+      "kmeans": {
+        "status": "done",
+        "time_sec": 3.1854617000026337
+      },
+      "isoforest": {
+        "status": "done",
+        "time_sec": 11.09832870000173,
+        "contamination_used": 0.020003295737512816
+      },
+      "validation_diagnosis": {
+        "status": "done",
+        "time_sec": 9.500406799998018,
+        "kmeans": {
+          "inertia_train_normalized": 11694.707872493207,
+          "inertia_val_normalized": 56857.6411627051,
+          "inertia_gap_pct": 386.1826544332788,
+          "silhouette_train": 0.9600189765142318,
+          "silhouette_val": 0.9108851981470077,
+          "silhouette_gap": 0.0491337783672241,
+          "diagnosis": "OK \u2014 KMeans generaliza bien al conjunto de validaci\u00f3n."
+        },
+        "isoforest": {
+          "mean_score_train": -0.3660533621691925,
+          "mean_score_val": -0.42935333717948926,
+          "std_score_train": 0.10342329226284039,
+          "std_score_val": 0.143693526204249,
+          "mean_score_gap": 0.06329997501029677,
+          "gap_zscore": 0.6120475728951458,
+          "ks_proxy": 0.6120475728951458,
+          "anomaly_rate_train": 0.020003295737512816,
+          "anomaly_rate_val": 0.06023875787315072,
+          "diagnosis": "OK \u2014 Isolation Forest generaliza bien al conjunto de validaci\u00f3n."
+        }
+      }
+    },
+    "folder_name": "2026-04-30_2026-05-02",
+    "mode": "hardcore",
+    "status": "done",
+    "num_rows_total": 273080,
+    "num_rows_train": 218464,
+    "num_rows_val": 54616,
+    "n_features": 16,
+    "started_at": "2026-05-10T03:11:23.739510",
+    "finished_at": "2026-05-10T03:14:33.962195",
+    "elapsed_sec": 191.8402767999978
+  },
+  "2026-04-30_2026-05-03": {
+    "phases": {
+      "inicio": {
+        "status": "done",
+        "time_sec": 0
+      },
+      "preprocessor": {
+        "status": "done",
+        "time_sec": 88.14778040000238
+      },
+      "transform": {
+        "status": "done",
+        "time_sec": 106.36988859999838
+      },
+      "pca": {
+        "status": "done",
+        "time_sec": 0.4865632999972149,
+        "n_components_in": 32,
+        "n_components_out": 1,
+        "variance_explained": 0.9988142957385385
+      },
+      "kmeans": {
+        "status": "done",
+        "time_sec": 1.1561666000015975
+      },
+      "isoforest": {
+        "status": "done",
+        "time_sec": 1.7292883999980404,
+        "contamination_used": 0.019878334113242864
+      },
+      "validation_diagnosis": {
+        "status": "done",
+        "time_sec": 2.203827599998476,
+        "kmeans": {
+          "inertia_train_normalized": 14334.11309240751,
+          "inertia_val_normalized": 67043.2858283537,
+          "inertia_gap_pct": 367.7184098949602,
+          "silhouette_train": 0.9650340915968485,
+          "silhouette_val": 0.9103951144638086,
+          "silhouette_gap": 0.05463897713303989,
+          "diagnosis": "OK \u2014 KMeans generaliza bien al conjunto de validaci\u00f3n."
+        },
+        "isoforest": {
+          "mean_score_train": -0.36022132497008486,
+          "mean_score_val": -0.42045216357568793,
+          "std_score_train": 0.10063923726267324,
+          "std_score_val": 0.14160603035949382,
+          "mean_score_gap": 0.060230838605603076,
+          "gap_zscore": 0.5984826618707145,
+          "ks_proxy": 0.5984826618707145,
+          "anomaly_rate_train": 0.019878334113242864,
+          "anomaly_rate_val": 0.060585187625408043,
+          "diagnosis": "OK \u2014 Isolation Forest generaliza bien al conjunto de validaci\u00f3n."
+        }
+      }
+    },
+    "folder_name": "2026-04-30_2026-05-03",
+    "mode": "low",
+    "status": "done",
+    "num_rows_total": 333907,
+    "num_rows_train": 267125,
+    "num_rows_val": 66782,
+    "n_features": 16,
+    "started_at": "2026-05-10T03:14:38.604931",
+    "finished_at": "2026-05-10T03:18:03.708050",
+    "elapsed_sec": 207.02433240000028
+  },
+  "2026-05-01_2026-05-02": {
+    "phases": {
+      "inicio": {
+        "status": "done",
+        "time_sec": 0
+      },
+      "preprocessor": {
+        "status": "done",
+        "time_sec": 74.78533020000032
+      },
+      "transform": {
+        "status": "done",
+        "time_sec": 87.3558066000005
+      },
+      "pca": {
+        "status": "done",
+        "time_sec": 0.4136216000006243,
+        "n_components_in": 32,
+        "n_components_out": 1,
+        "variance_explained": 0.9987186091701996
+      },
+      "kmeans": {
+        "status": "done",
+        "time_sec": 1.8868310999969253
+      },
+      "isoforest": {
+        "status": "done",
+        "time_sec": 4.427304599998024,
+        "contamination_used": 0.019998131015792918
+      },
+      "validation_diagnosis": {
+        "status": "done",
+        "time_sec": 4.135018400000263,
+        "kmeans": {
+          "inertia_train_normalized": 12059.670457768434,
+          "inertia_val_normalized": 56638.426792515886,
+          "inertia_gap_pct": 369.6515297897822,
+          "silhouette_train": 0.9597068079221354,
+          "silhouette_val": 0.9115224791783079,
+          "silhouette_gap": 0.0481843287438275,
+          "diagnosis": "OK \u2014 KMeans generaliza bien al conjunto de validaci\u00f3n."
+        },
+        "isoforest": {
+          "mean_score_train": -0.3655073023987319,
+          "mean_score_val": -0.42838087024419047,
+          "std_score_train": 0.10130970526260226,
+          "std_score_val": 0.14146801764895114,
+          "mean_score_gap": 0.06287356784545856,
+          "gap_zscore": 0.6206075487287779,
+          "ks_proxy": 0.6206075487287779,
+          "anomaly_rate_train": 0.019998131015792918,
+          "anomaly_rate_val": 0.06064740402945464,
+          "diagnosis": "OK \u2014 Isolation Forest generaliza bien al conjunto de validaci\u00f3n."
+        }
+      }
+    },
+    "folder_name": "2026-05-01_2026-05-02",
     "mode": "normal",
     "status": "done",
-    "num_rows": 5331878,
+    "num_rows_total": 267526,
+    "num_rows_train": 214020,
+    "num_rows_val": 53506,
     "n_features": 16,
-    "started_at": "2026-02-11T22:17:09.013740",
-    "finished_at": "2026-02-11T22:18:29.507180",
-    "elapsed_sec": 93.47852460000013
+    "started_at": "2026-05-10T03:18:08.232005",
+    "finished_at": "2026-05-10T03:21:04.822559",
+    "elapsed_sec": 178.3021176000002
+  },
+  "2026-05-01_2026-05-03": {
+    "phases": {
+      "inicio": {
+        "status": "done",
+        "time_sec": 0
+      },
+      "preprocessor": {
+        "status": "done",
+        "time_sec": 86.33427179999853
+      },
+      "transform": {
+        "status": "done",
+        "time_sec": 106.04588230000081
+      },
+      "pca": {
+        "status": "done",
+        "time_sec": 0.4799970000021858,
+        "n_components_in": 32,
+        "n_components_out": 1,
+        "variance_explained": 0.998929597162667
+      },
+      "kmeans": {
+        "status": "done",
+        "time_sec": 1.0671998000034364
+      },
+      "isoforest": {
+        "status": "done",
+        "time_sec": 1.2887589999991178,
+        "contamination_used": 0.019887163947282266
+      },
+      "validation_diagnosis": {
+        "status": "done",
+        "time_sec": 1.7304717000006349,
+        "kmeans": {
+          "inertia_train_normalized": 14520.827069633522,
+          "inertia_val_normalized": 69944.10483043584,
+          "inertia_gap_pct": 381.68127404192757,
+          "silhouette_train": 0.9585504672296234,
+          "silhouette_val": 0.9120393490248371,
+          "silhouette_gap": 0.04651111820478637,
+          "diagnosis": "OK \u2014 KMeans generaliza bien al conjunto de validaci\u00f3n."
+        },
+        "isoforest": {
+          "mean_score_train": -0.3624358504696281,
+          "mean_score_val": -0.42496977559043564,
+          "std_score_train": 0.10384027299542528,
+          "std_score_val": 0.14553477674264623,
+          "mean_score_gap": 0.06253392512080752,
+          "gap_zscore": 0.6022126417518421,
+          "ks_proxy": 0.6022126417518421,
+          "anomaly_rate_train": 0.019887163947282266,
+          "anomaly_rate_val": 0.0595392182241781,
+          "diagnosis": "OK \u2014 Isolation Forest generaliza bien al conjunto de validaci\u00f3n."
+        }
+      }
+    },
+    "folder_name": "2026-05-01_2026-05-03",
+    "mode": "low",
+    "status": "done",
+    "num_rows_total": 328353,
+    "num_rows_train": 262682,
+    "num_rows_val": 65671,
+    "n_features": 16,
+    "started_at": "2026-05-10T03:21:09.566452",
+    "finished_at": "2026-05-10T03:24:29.998711",
+    "elapsed_sec": 202.35472689999733
+  },
+  "2026-05-02_2026-05-03": {
+    "phases": {
+      "inicio": {
+        "status": "done",
+        "time_sec": 0
+      },
+      "preprocessor": {
+        "status": "done",
+        "time_sec": 73.46878740000102
+      },
+      "transform": {
+        "status": "done",
+        "time_sec": 88.50949249999758
+      },
+      "pca": {
+        "status": "done",
+        "time_sec": 0.4063577000015357,
+        "n_components_in": 32,
+        "n_components_out": 1,
+        "variance_explained": 0.9986779292779605
+      },
+      "kmeans": {
+        "status": "done",
+        "time_sec": 0.980740799997875
+      },
+      "isoforest": {
+        "status": "done",
+        "time_sec": 1.1382978000001458,
+        "contamination_used": 0.019983930262726737
+      },
+      "validation_diagnosis": {
+        "status": "done",
+        "time_sec": 1.5863013000016508,
+        "kmeans": {
+          "inertia_train_normalized": 9010.611454412747,
+          "inertia_val_normalized": 46711.258588703,
+          "inertia_gap_pct": 418.4027612890488,
+          "silhouette_train": 0.9614089662187194,
+          "silhouette_val": 0.9099532263713607,
+          "silhouette_gap": 0.05145573984735874,
+          "diagnosis": "OK \u2014 KMeans generaliza bien al conjunto de validaci\u00f3n."
+        },
+        "isoforest": {
+          "mean_score_train": -0.36381545339924687,
+          "mean_score_val": -0.42652229190549656,
+          "std_score_train": 0.10514225852191637,
+          "std_score_val": 0.14672583812723825,
+          "mean_score_gap": 0.0627068385062497,
+          "gap_zscore": 0.5963999574270014,
+          "ks_proxy": 0.5963999574270014,
+          "anomaly_rate_train": 0.019983930262726737,
+          "anomaly_rate_val": 0.059754017416285124,
+          "diagnosis": "OK \u2014 Isolation Forest generaliza bien al conjunto de validaci\u00f3n."
+        }
+      }
+    },
+    "folder_name": "2026-05-02_2026-05-03",
+    "mode": "low",
+    "status": "done",
+    "num_rows_total": 278474,
+    "num_rows_train": 222779,
+    "num_rows_val": 55695,
+    "n_features": 16,
+    "started_at": "2026-05-10T03:24:34.484976",
+    "finished_at": "2026-05-10T03:27:24.014107",
+    "elapsed_sec": 171.15476560000025
   }
 }

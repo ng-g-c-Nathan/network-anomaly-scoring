@@ -1,3 +1,22 @@
+"""
+Controller.py
+-------------
+Orquestador de análisis de tráfico de red.
+
+Gestiona la ejecución de scoring sobre CSVs individuales o rangos de
+fechas de CSV diarios, registrando cada ejecución en ``analysis_history.json``
+con estado, tiempos y resultados. Emite la salida en JSON por stdout para
+facilitar su consumo por un backend.
+
+Uso desde línea de comandos::
+
+    # Modo 1 — CSV explícito (con modelo opcional)
+    python Controller.py archivo.csv [model_start] [model_end]
+
+    # Modo 2 — Rango de fechas de CSV diarios
+    python Controller.py start_date end_date [model_start] [model_end]
+"""
+
 import json
 import uuid
 import subprocess
@@ -499,6 +518,11 @@ def main():
             })
 
         finished_at = now()
+
+        # Si no se pudo extraer duración del nombre del CSV, calcularla
+        # a partir de los timestamps reales de inicio y fin
+        if secs is None:
+            secs, human, cat = duration_info(started_at, finished_at)
 
         # Recalcular duración en el caso de análisis por fechas
         if not csv_file and start_date and end_date:

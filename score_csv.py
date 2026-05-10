@@ -1,3 +1,19 @@
+"""
+score_csv.py
+------------
+Módulo de scoring para evaluar tráfico de red con modelos pre-entrenados.
+
+Aplica el pipeline de preprocesamiento, PCA, KMeans e Isolation Forest
+sobre un CSV de entrada y devuelve métricas agregadas en formato JSON.
+Puede usarse como módulo importable (``score_csv(df, model_path)``)
+o ejecutarse directamente desde línea de comandos::
+
+    python score_csv.py archivo.csv [start_date] [end_date]
+
+    start_date : fecha inicial del modelo YYYY-MM-DD (opcional)
+    end_date   : fecha final   del modelo YYYY-MM-DD (opcional)
+"""
+
 import pandas as pd
 import numpy as np
 import sys
@@ -57,9 +73,11 @@ def score_csv(df, model_path):
     pre = load_preprocessor(os.path.join(model_path, "preprocessor.joblib"))
     kmeans = joblib.load(os.path.join(model_path, "kmeans.joblib"))
     iso = joblib.load(os.path.join(model_path, "isoforest.joblib"))
+    pca = joblib.load(os.path.join(model_path, "pca.joblib"))
 
     # Transformación de los datos usando el mismo pipeline de entrenamiento
     X = transform(df, pre)
+    X = pca.transform(X)
 
     # Scoring con Isolation Forest
     iso_score = iso.decision_function(X)
@@ -98,7 +116,10 @@ def score_csv(df, model_path):
             "folder_name": info.get("folder_name", "unknown"),
             "trained_at": info.get("trained_at", "unknown"),
             "trained_rows": info.get("num_rows", None),
-            "trained_features": info.get("n_features", None)
+            "trained_features": info.get("n_features", None),
+            "pca_components_in": info.get("pca_components_in", None),
+            "pca_components_out": info.get("pca_components_out", None),
+            "pca_variance_explained": info.get("pca_variance_explained", None)
         })
     else:
         results.update({

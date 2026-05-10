@@ -1,7 +1,36 @@
 {
-  "mode": "low",
+  "mode": "hardcore",
   "folder_name": "global",
-  "trained_at": "2026-02-11T22:11:34.334544",
-  "num_rows": 9328691,
-  "n_features": 16
+  "trained_at": "2026-05-10T02:39:35.769107",
+  "num_rows": 499973,
+  "num_rows_total": 499973,
+  "num_rows_train": 399978,
+  "num_rows_val": 99995,
+  "n_features": 16,
+  "pca_components_in": 32,
+  "pca_components_out": 2,
+  "pca_variance_explained": 0.9884123996731662,
+  "validation": {
+    "kmeans": {
+      "inertia_train_normalized": 1168.5826974535196,
+      "inertia_val_normalized": 5469.204820923548,
+      "inertia_gap_pct": 368.02034916669527,
+      "silhouette_train": 0.9213702128839802,
+      "silhouette_val": 0.8506807913157481,
+      "silhouette_gap": 0.0706894215682321,
+      "diagnosis": "OK \u2014 KMeans generaliza bien al conjunto de validaci\u00f3n."
+    },
+    "isoforest": {
+      "mean_score_train": -0.36869259433904333,
+      "mean_score_val": -0.4227658111820265,
+      "std_score_train": 0.10312834135226628,
+      "std_score_val": 0.1363770055863287,
+      "mean_score_gap": 0.05407321684298316,
+      "gap_zscore": 0.5243293563529701,
+      "ks_proxy": 0.5243293563529701,
+      "anomaly_rate_train": 0.019956097585367195,
+      "anomaly_rate_val": 0.05888294414720736,
+      "diagnosis": "OK \u2014 Isolation Forest generaliza bien al conjunto de validaci\u00f3n."
+    }
+  }
 }
